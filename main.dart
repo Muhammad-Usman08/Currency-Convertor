@@ -37,19 +37,19 @@ void main() {
 
 
 
-double converter(double userAmount, int userOption) {
-  double result = 0;
+dynamic converter(double userAmount, int userOption) {
+  dynamic result = 0;
   if (userOption == 0) {
-    result = userAmount * 0.0036;
+    result = '${userAmount * 0.0036 } USD';
   }
   else  if (userOption == 1) {
-    result = userAmount * 0.0033;
+    result = '${ userAmount * 0.0033} EUR ';
   }
    else if (userOption == 2) {
-    result = userAmount * 0.30;
+    result = '${userAmount * 0.30} INR';
   }
   else if (userOption == 3) {
-    result = userAmount * 0.013;
+    result = '${userAmount * 0.013} AED' ;
   }
   else{
     print("Invalid Options");
